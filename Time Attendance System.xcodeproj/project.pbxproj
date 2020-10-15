@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F07B33D2533391400FA95ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07B33C2533391400FA95ED /* AppDelegate.swift */; };
+		4F07B33F2533391400FA95ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07B33E2533391400FA95ED /* SceneDelegate.swift */; };
+		4F07B3412533391400FA95ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07B3402533391400FA95ED /* ViewController.swift */; };
+		4F07B3442533391400FA95ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F07B3422533391400FA95ED /* Main.storyboard */; };
+		4F07B3462533391500FA95ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F07B3452533391500FA95ED /* Assets.xcassets */; };
+		4F07B3492533391500FA95ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F07B3472533391500FA95ED /* LaunchScreen.storyboard */; };
+		4F07B3522533473B00FA95ED /* EmployeeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07B3512533473B00FA95ED /* EmployeeInfoViewController.swift */; };
+		4F70590325334DD800E8E2C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F70590225334DD800E8E2C4 /* GoogleService-Info.plist */; };
+		9E0DE84E4C8563D4B1CCE71E /* Pods_Time_Attendance_System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7CAE6E95BB97E832A269E1 /* Pods_Time_Attendance_System.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4D7CAE6E95BB97E832A269E1 /* Pods_Time_Attendance_System.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Time_Attendance_System.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F07B3392533391400FA95ED /* Time Attendance System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Attendance System.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F07B33C2533391400FA95ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4F07B33E2533391400FA95ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4F07B3402533391400FA95ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F07B3432533391400FA95ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4F07B3452533391500FA95ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F07B3482533391500FA95ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4F07B34A2533391500FA95ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F07B3512533473B00FA95ED /* EmployeeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeInfoViewController.swift; sourceTree = "<group>"; };
+		4F36912425375FBB000477A6 /* Time Attendance System.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Time Attendance System.entitlements"; sourceTree = "<group>"; };
+		4F70590225334DD800E8E2C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6B5FB12CCCC9ADA33B3F5863 /* Pods-Time Attendance System.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time Attendance System.release.xcconfig"; path = "Target Support Files/Pods-Time Attendance System/Pods-Time Attendance System.release.xcconfig"; sourceTree = "<group>"; };
+		9E77D3E40DC4DFF39F1F888E /* Pods-Time Attendance System.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time Attendance System.debug.xcconfig"; path = "Target Support Files/Pods-Time Attendance System/Pods-Time Attendance System.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F07B3362533391400FA95ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E0DE84E4C8563D4B1CCE71E /* Pods_Time_Attendance_System.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		002B390BCD0F86B02AD1174E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D7CAE6E95BB97E832A269E1 /* Pods_Time_Attendance_System.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F07B3302533391400FA95ED = {
+			isa = PBXGroup;
+			children = (
+				4F07B33B2533391400FA95ED /* Time Attendance System */,
+				4F07B33A2533391400FA95ED /* Products */,
+				6C78541568FA4DD68B951FC2 /* Pods */,
+				002B390BCD0F86B02AD1174E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4F07B33A2533391400FA95ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F07B3392533391400FA95ED /* Time Attendance System.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F07B33B2533391400FA95ED /* Time Attendance System */ = {
+			isa = PBXGroup;
+			children = (
+				4F36912425375FBB000477A6 /* Time Attendance System.entitlements */,
+				4F07B33C2533391400FA95ED /* AppDelegate.swift */,
+				4F07B33E2533391400FA95ED /* SceneDelegate.swift */,
+				4F07B3402533391400FA95ED /* ViewController.swift */,
+				4F07B3512533473B00FA95ED /* EmployeeInfoViewController.swift */,
+				4F07B3422533391400FA95ED /* Main.storyboard */,
+				4F07B3452533391500FA95ED /* Assets.xcassets */,
+				4F07B3472533391500FA95ED /* LaunchScreen.storyboard */,
+				4F07B34A2533391500FA95ED /* Info.plist */,
+				4F70590225334DD800E8E2C4 /* GoogleService-Info.plist */,
+			);
+			path = "Time Attendance System";
+			sourceTree = "<group>";
+		};
+		6C78541568FA4DD68B951FC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E77D3E40DC4DFF39F1F888E /* Pods-Time Attendance System.debug.xcconfig */,
+				6B5FB12CCCC9ADA33B3F5863 /* Pods-Time Attendance System.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F07B3382533391400FA95ED /* Time Attendance System */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F07B34D2533391500FA95ED /* Build configuration list for PBXNativeTarget "Time Attendance System" */;
+			buildPhases = (
+				9E62CF4096ED9FA3BE2D53B0 /* [CP] Check Pods Manifest.lock */,
+				4F07B3352533391400FA95ED /* Sources */,
+				4F07B3362533391400FA95ED /* Frameworks */,
+				4F07B3372533391400FA95ED /* Resources */,
+				546015AFE86F0A4E70C2FD11 /* [CP] Copy Pods Resources */,
+				E3AB08BB5C38B276A3C880BA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Time Attendance System";
+			productName = "Time Attendance System";
+			productReference = 4F07B3392533391400FA95ED /* Time Attendance System.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F07B3312533391400FA95ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Omeir Ahmed";
+				TargetAttributes = {
+					4F07B3382533391400FA95ED = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4F07B3342533391400FA95ED /* Build configuration list for PBXProject "Time Attendance System" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F07B3302533391400FA95ED;
+			productRefGroup = 4F07B33A2533391400FA95ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F07B3382533391400FA95ED /* Time Attendance System */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F07B3372533391400FA95ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F07B3492533391500FA95ED /* LaunchScreen.storyboard in Resources */,
+				4F70590325334DD800E8E2C4 /* GoogleService-Info.plist in Resources */,
+				4F07B3462533391500FA95ED /* Assets.xcassets in Resources */,
+				4F07B3442533391400FA95ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		546015AFE86F0A4E70C2FD11 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Time Attendance System/Pods-Time Attendance System-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Time Attendance System/Pods-Time Attendance System-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Time Attendance System/Pods-Time Attendance System-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E62CF4096ED9FA3BE2D53B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Time Attendance System-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3AB08BB5C38B276A3C880BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Time Attendance System/Pods-Time Attendance System-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Time Attendance System/Pods-Time Attendance System-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Time Attendance System/Pods-Time Attendance System-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F07B3352533391400FA95ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F07B3522533473B00FA95ED /* EmployeeInfoViewController.swift in Sources */,
+				4F07B3412533391400FA95ED /* ViewController.swift in Sources */,
+				4F07B33D2533391400FA95ED /* AppDelegate.swift in Sources */,
+				4F07B33F2533391400FA95ED /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4F07B3422533391400FA95ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F07B3432533391400FA95ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4F07B3472533391500FA95ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F07B3482533391500FA95ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F07B34B2533391500FA95ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F07B34C2533391500FA95ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F07B34E2533391500FA95ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E77D3E40DC4DFF39F1F888E /* Pods-Time Attendance System.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Time Attendance System/Time Attendance System.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AVPMJFS342;
+				INFOPLIST_FILE = "Time Attendance System/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Salman.Time-Attendance-System";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F07B34F2533391500FA95ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B5FB12CCCC9ADA33B3F5863 /* Pods-Time Attendance System.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Time Attendance System/Time Attendance System.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AVPMJFS342;
+				INFOPLIST_FILE = "Time Attendance System/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Salman.Time-Attendance-System";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F07B3342533391400FA95ED /* Build configuration list for PBXProject "Time Attendance System" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F07B34B2533391500FA95ED /* Debug */,
+				4F07B34C2533391500FA95ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F07B34D2533391500FA95ED /* Build configuration list for PBXNativeTarget "Time Attendance System" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F07B34E2533391500FA95ED /* Debug */,
+				4F07B34F2533391500FA95ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F07B3312533391400FA95ED /* Project object */;
+}
