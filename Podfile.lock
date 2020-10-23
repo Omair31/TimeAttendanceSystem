@@ -1,6 +1,9 @@
 PODS:
+  - EstimoteBluetoothScanning (1.0.8)
   - EstimoteIndoorSDK (2.7.1):
     - EstimoteSDK (~> 4.16.0)
+  - EstimoteProximitySDK (1.7.0):
+    - EstimoteBluetoothScanning (~> 1.0.8)
   - EstimoteSDK (4.16.2)
   - Firebase (6.33.0):
     - Firebase/Core (= 6.33.0)
@@ -75,12 +78,15 @@ PODS:
 
 DEPENDENCIES:
   - EstimoteIndoorSDK
+  - EstimoteProximitySDK
   - Firebase
   - Firebase/Database
 
 SPEC REPOS:
   trunk:
+    - EstimoteBluetoothScanning
     - EstimoteIndoorSDK
+    - EstimoteProximitySDK
     - EstimoteSDK
     - Firebase
     - FirebaseAnalytics
@@ -96,7 +102,9 @@ SPEC REPOS:
     - PromisesObjC
 
 SPEC CHECKSUMS:
+  EstimoteBluetoothScanning: aef117c8584951609403dc73cb07f6501911a365
   EstimoteIndoorSDK: 53eaf12601b855f1d7eea7ae930d3fb8f66fb71d
+  EstimoteProximitySDK: b0128f51c7487dbd3c073691cec246c8d733808c
   EstimoteSDK: 17d0778be064419dd905f41981f831052f4c19ee
   Firebase: 8db6f2d1b2c5e2984efba4949a145875a8f65fe5
   FirebaseAnalytics: 5dd088bd2e67bb9d13dbf792d1164ceaf3052193
@@ -111,6 +119,6 @@ SPEC CHECKSUMS:
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
 
-PODFILE CHECKSUM: e82dbbec03c5dfb65d38e8d070a98e110c8ca27b
+PODFILE CHECKSUM: 560222748a244899a7f6fa84fd7c01c323ca9f85
 
 COCOAPODS: 1.8.4

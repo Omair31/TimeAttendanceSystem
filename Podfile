@@ -9,5 +9,6 @@ target 'Time Attendance System' do
   pod 'EstimoteIndoorSDK'
   pod 'Firebase'
   pod 'Firebase/Database'
+  pod 'EstimoteProximitySDK'
 
 end

@@ -14,7 +14,8 @@
 		4F07B3462533391500FA95ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F07B3452533391500FA95ED /* Assets.xcassets */; };
 		4F07B3492533391500FA95ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F07B3472533391500FA95ED /* LaunchScreen.storyboard */; };
 		4F07B3522533473B00FA95ED /* EmployeeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07B3512533473B00FA95ED /* EmployeeInfoViewController.swift */; };
-		4F70590325334DD800E8E2C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F70590225334DD800E8E2C4 /* GoogleService-Info.plist */; };
+		4F642F2F25435E9C002D490F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F642F2E25435E9C002D490F /* GoogleService-Info.plist */; };
+		4F642F3225436BE6002D490F /* AppCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F642F3125436BE6002D490F /* AppCredentials.swift */; };
 		9E0DE84E4C8563D4B1CCE71E /* Pods_Time_Attendance_System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7CAE6E95BB97E832A269E1 /* Pods_Time_Attendance_System.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +31,8 @@
 		4F07B34A2533391500FA95ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F07B3512533473B00FA95ED /* EmployeeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeInfoViewController.swift; sourceTree = "<group>"; };
 		4F36912425375FBB000477A6 /* Time Attendance System.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Time Attendance System.entitlements"; sourceTree = "<group>"; };
-		4F70590225334DD800E8E2C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F642F2E25435E9C002D490F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F642F3125436BE6002D490F /* AppCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCredentials.swift; sourceTree = "<group>"; };
 		6B5FB12CCCC9ADA33B3F5863 /* Pods-Time Attendance System.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time Attendance System.release.xcconfig"; path = "Target Support Files/Pods-Time Attendance System/Pods-Time Attendance System.release.xcconfig"; sourceTree = "<group>"; };
 		9E77D3E40DC4DFF39F1F888E /* Pods-Time Attendance System.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time Attendance System.debug.xcconfig"; path = "Target Support Files/Pods-Time Attendance System/Pods-Time Attendance System.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +80,7 @@
 			children = (
 				4F36912425375FBB000477A6 /* Time Attendance System.entitlements */,
 				4F07B33C2533391400FA95ED /* AppDelegate.swift */,
+				4F642F3125436BE6002D490F /* AppCredentials.swift */,
 				4F07B33E2533391400FA95ED /* SceneDelegate.swift */,
 				4F07B3402533391400FA95ED /* ViewController.swift */,
 				4F07B3512533473B00FA95ED /* EmployeeInfoViewController.swift */,
@@ -85,7 +88,7 @@
 				4F07B3452533391500FA95ED /* Assets.xcassets */,
 				4F07B3472533391500FA95ED /* LaunchScreen.storyboard */,
 				4F07B34A2533391500FA95ED /* Info.plist */,
-				4F70590225334DD800E8E2C4 /* GoogleService-Info.plist */,
+				4F642F2E25435E9C002D490F /* GoogleService-Info.plist */,
 			);
 			path = "Time Attendance System";
 			sourceTree = "<group>";
@@ -161,7 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F07B3492533391500FA95ED /* LaunchScreen.storyboard in Resources */,
-				4F70590325334DD800E8E2C4 /* GoogleService-Info.plist in Resources */,
+				4F642F2F25435E9C002D490F /* GoogleService-Info.plist in Resources */,
 				4F07B3462533391500FA95ED /* Assets.xcassets in Resources */,
 				4F07B3442533391400FA95ED /* Main.storyboard in Resources */,
 			);
@@ -237,6 +240,7 @@
 				4F07B3412533391400FA95ED /* ViewController.swift in Sources */,
 				4F07B33D2533391400FA95ED /* AppDelegate.swift in Sources */,
 				4F07B33F2533391400FA95ED /* SceneDelegate.swift in Sources */,
+				4F642F3225436BE6002D490F /* AppCredentials.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

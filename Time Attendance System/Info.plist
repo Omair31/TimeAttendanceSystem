@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>allow access</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Please always and in app allow location access</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Please always allow location access to observe beacons</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Please allow location access to observe beacons</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -39,6 +47,10 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-central</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

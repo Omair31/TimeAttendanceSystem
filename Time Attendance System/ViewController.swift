@@ -67,9 +67,11 @@ extension ViewController: ASAuthorizationControllerDelegate, ASAuthorizationCont
     }
     
     func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
-        let alertController = UIAlertController(title: "Error", message: "Authentication failed due to the following reason:\n \(error.localizedDescription)", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alertController, animated: true, completion: nil)
+//        let alertController = UIAlertController(title: "Error", message: "Authentication failed due to the following reason:\n \(error.localizedDescription)", preferredStyle: .alert)
+//        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//        present(alertController, animated: true, completion: nil)
+        let employeeInfoVC = self.storyboard?.instantiateViewController(identifier: "EmployeeInfoViewController") as! EmployeeInfoViewController
+        navigationController?.pushViewController(employeeInfoVC, animated: true)
     }
     
     
