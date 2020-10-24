@@ -45,6 +45,7 @@ class BeaconDetectionViewController: UIViewController {
         setupBluetoothManager()
         setupLocationServices()
         setupNotifiers()
+        navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
     }
     
