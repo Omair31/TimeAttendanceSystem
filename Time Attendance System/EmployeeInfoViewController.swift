@@ -46,15 +46,21 @@ class EmployeeInfoViewController: UIViewController {
             }
         }
         
-        Database.database().reference().child(UUID().uuidString).updateChildValues(
-        ["name":nameTextField.text ?? "",
-        "email":emailTextField.text ?? "",
-        "phoneNumber":phoneNumberTextField.text ?? "",
-        "department":departmentTextField.text ?? ""]) { (error, reference) in
+        let name = nameTextField.text ?? ""
+        let email = emailTextField.text ?? ""
+        let phoneNumber = phoneNumberTextField.text ?? ""
+        let department = departmentTextField.text ?? ""
+        
+        Database.database().reference().child("users").child(UUID().uuidString).updateChildValues(
+        ["name":name,
+        "email":email,
+        "phoneNumber":phoneNumber,
+        "department":department]) { (error, reference) in
             if let error = error {
                 print(error.localizedDescription)
                 return
             }
+            Employee.currentEmployee = Employee(name: name, email: email, phoneNumber: phoneNumber, department: department)
             self.showSuccessAlert()
         }
 
@@ -68,7 +74,10 @@ class EmployeeInfoViewController: UIViewController {
     
     func showSuccessAlert() {
         let alertController = UIAlertController(title: "Success", message: "Data successfully submitted to Firebase.", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+            let beaconDetectionVC = self.storyboard?.instantiateViewController(identifier: "BeaconDetectionViewController") as! BeaconDetectionViewController
+            self.navigationController?.pushViewController(beaconDetectionVC, animated: true)
+        }))
         present(alertController, animated: true, completion: nil)
     }
 

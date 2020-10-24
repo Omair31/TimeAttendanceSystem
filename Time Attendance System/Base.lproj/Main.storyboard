@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xKX-J9-bv6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xKX-J9-bv6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,12 +24,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="eJo-nE-YhW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QXZ-cF-jb0"/>
                             <constraint firstItem="eJo-nE-YhW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fef-Kj-RGX"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="WFw-5b-5nL"/>
                     <connections>
@@ -69,14 +71,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="asY-EQ-pHn">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="asY-EQ-pHn">
                                         <rect key="frame" x="0.0" y="390.5" width="331" height="57.5"/>
-                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Submit">
                                                     <attributes>
-                                                        <color key="NSColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="NSColor" systemColor="systemBackgroundColor"/>
                                                         <font key="NSFont" size="17" name="SFMono-Medium"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
@@ -91,14 +93,14 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YMJ-jt-mp7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="VxF-7z-rWQ" firstAttribute="width" secondItem="hQo-3X-gT4" secondAttribute="width" multiplier="0.8" id="CFH-KW-Sra"/>
                             <constraint firstItem="VxF-7z-rWQ" firstAttribute="height" secondItem="hQo-3X-gT4" secondAttribute="height" multiplier="0.5" id="JyJ-d2-L1a"/>
                             <constraint firstItem="VxF-7z-rWQ" firstAttribute="centerY" secondItem="hQo-3X-gT4" secondAttribute="centerY" constant="-60" id="K9C-7g-55D"/>
                             <constraint firstItem="VxF-7z-rWQ" firstAttribute="centerX" secondItem="hQo-3X-gT4" secondAttribute="centerX" id="mAg-pD-zDK"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="YMJ-jt-mp7"/>
                     </view>
                     <connections>
                         <outlet property="departmentTextField" destination="I2H-9P-YGz" id="Pfp-uu-N8b"/>
@@ -112,6 +114,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FwN-xO-GSj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1711" y="96"/>
+        </scene>
+        <!--Beacon Detection View Controller-->
+        <scene sceneID="Ja7-td-Fof">
+            <objects>
+                <viewController storyboardIdentifier="BeaconDetectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="y6y-LO-Mlh" customClass="BeaconDetectionViewController" customModule="Time_Attendance_System" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bbZ-Ob-zzx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searching" translatesAutoresizingMaskIntoConstraints="NO" id="gKI-u2-qgZ">
+                                <rect key="frame" x="107" y="308" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="VdD-gO-8fe"/>
+                                    <constraint firstAttribute="height" constant="200" id="bGb-OR-LzN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzO-6Q-dJM">
+                                <rect key="frame" x="52" y="538" width="310.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nKh-yn-QhP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jld-2O-J1i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mzO-6Q-dJM" firstAttribute="top" secondItem="gKI-u2-qgZ" secondAttribute="bottom" constant="30" id="7Lg-3c-0fb"/>
+                            <constraint firstItem="mzO-6Q-dJM" firstAttribute="width" secondItem="bbZ-Ob-zzx" secondAttribute="width" multiplier="0.75" id="RLP-fS-drc"/>
+                            <constraint firstItem="mzO-6Q-dJM" firstAttribute="centerX" secondItem="bbZ-Ob-zzx" secondAttribute="centerX" id="VL5-Gj-UNn"/>
+                            <constraint firstItem="gKI-u2-qgZ" firstAttribute="centerX" secondItem="bbZ-Ob-zzx" secondAttribute="centerX" id="Xnx-qQ-30n"/>
+                            <constraint firstItem="gKI-u2-qgZ" firstAttribute="centerY" secondItem="bbZ-Ob-zzx" secondAttribute="centerY" constant="-40" id="pli-j8-DWb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="mzO-6Q-dJM" id="R46-2O-E5l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gs0-Xd-DcO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2531" y="148"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NN3-Wu-6OD">
@@ -132,4 +177,13 @@
             <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="searching" width="290.5" height="289"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

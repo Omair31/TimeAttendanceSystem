@@ -16,6 +16,10 @@
 		4F07B3522533473B00FA95ED /* EmployeeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07B3512533473B00FA95ED /* EmployeeInfoViewController.swift */; };
 		4F642F2F25435E9C002D490F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F642F2E25435E9C002D490F /* GoogleService-Info.plist */; };
 		4F642F3225436BE6002D490F /* AppCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F642F3125436BE6002D490F /* AppCredentials.swift */; };
+		4FAA950A25445B5A003A4D0A /* DeviceIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA950925445B5A003A4D0A /* DeviceIdentifier.swift */; };
+		4FAA950D25445C6A003A4D0A /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA950C25445C6A003A4D0A /* Employee.swift */; };
+		4FAA951025446088003A4D0A /* BeaconDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA950F25446088003A4D0A /* BeaconDetectionViewController.swift */; };
+		4FAA95132544687A003A4D0A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA95122544687A003A4D0A /* Utility.swift */; };
 		9E0DE84E4C8563D4B1CCE71E /* Pods_Time_Attendance_System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7CAE6E95BB97E832A269E1 /* Pods_Time_Attendance_System.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +37,10 @@
 		4F36912425375FBB000477A6 /* Time Attendance System.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Time Attendance System.entitlements"; sourceTree = "<group>"; };
 		4F642F2E25435E9C002D490F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4F642F3125436BE6002D490F /* AppCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCredentials.swift; sourceTree = "<group>"; };
+		4FAA950925445B5A003A4D0A /* DeviceIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceIdentifier.swift; sourceTree = "<group>"; };
+		4FAA950C25445C6A003A4D0A /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		4FAA950F25446088003A4D0A /* BeaconDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconDetectionViewController.swift; sourceTree = "<group>"; };
+		4FAA95122544687A003A4D0A /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		6B5FB12CCCC9ADA33B3F5863 /* Pods-Time Attendance System.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time Attendance System.release.xcconfig"; path = "Target Support Files/Pods-Time Attendance System/Pods-Time Attendance System.release.xcconfig"; sourceTree = "<group>"; };
 		9E77D3E40DC4DFF39F1F888E /* Pods-Time Attendance System.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time Attendance System.debug.xcconfig"; path = "Target Support Files/Pods-Time Attendance System/Pods-Time Attendance System.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,10 +88,14 @@
 			children = (
 				4F36912425375FBB000477A6 /* Time Attendance System.entitlements */,
 				4F07B33C2533391400FA95ED /* AppDelegate.swift */,
+				4FAA95122544687A003A4D0A /* Utility.swift */,
+				4FAA950C25445C6A003A4D0A /* Employee.swift */,
+				4FAA950925445B5A003A4D0A /* DeviceIdentifier.swift */,
 				4F642F3125436BE6002D490F /* AppCredentials.swift */,
 				4F07B33E2533391400FA95ED /* SceneDelegate.swift */,
 				4F07B3402533391400FA95ED /* ViewController.swift */,
 				4F07B3512533473B00FA95ED /* EmployeeInfoViewController.swift */,
+				4FAA950F25446088003A4D0A /* BeaconDetectionViewController.swift */,
 				4F07B3422533391400FA95ED /* Main.storyboard */,
 				4F07B3452533391500FA95ED /* Assets.xcassets */,
 				4F07B3472533391500FA95ED /* LaunchScreen.storyboard */,
@@ -236,8 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FAA950A25445B5A003A4D0A /* DeviceIdentifier.swift in Sources */,
 				4F07B3522533473B00FA95ED /* EmployeeInfoViewController.swift in Sources */,
+				4FAA95132544687A003A4D0A /* Utility.swift in Sources */,
 				4F07B3412533391400FA95ED /* ViewController.swift in Sources */,
+				4FAA950D25445C6A003A4D0A /* Employee.swift in Sources */,
+				4FAA951025446088003A4D0A /* BeaconDetectionViewController.swift in Sources */,
 				4F07B33D2533391400FA95ED /* AppDelegate.swift in Sources */,
 				4F07B33F2533391400FA95ED /* SceneDelegate.swift in Sources */,
 				4F642F3225436BE6002D490F /* AppCredentials.swift in Sources */,
@@ -390,6 +406,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AVPMJFS342;
 				INFOPLIST_FILE = "Time Attendance System/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,6 +429,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AVPMJFS342;
 				INFOPLIST_FILE = "Time Attendance System/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

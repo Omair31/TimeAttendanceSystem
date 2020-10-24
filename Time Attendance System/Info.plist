@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>allow access</string>
+	<string>Please allow bluetooth access for connectivity</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Please always and in app allow location access</string>
 	<key>NSLocationAlwaysUsageDescription</key>

@@ -9,6 +9,8 @@
 import UIKit
 import Firebase
 import EstimoteProximitySDK
+import CoreLocation
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,39 +20,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        
-        let estimoteCloudCredentials = CloudCredentials(appID: AppCredentials.appId, appToken: AppCredentials.appToken)
+        return true
+    }
+    
+    func startProximityObservation() {
+        let estimoteCloudCredentials = CloudCredentials(appID: AppCredentials.appId,
+                                                        appToken: AppCredentials.appToken)
 
         proximityObserver = ProximityObserver(credentials: estimoteCloudCredentials, onError: { error in
-            print("ProximityObserver error: \(error)")
+            print("ProximityObserver error: \(error.localizedDescription)")
         })
 
-        let zone = ProximityZone(tag: "time-attendance-system--0k8", range: ProximityRange.near)
+        let zone = ProximityZone(tag: AppCredentials.tag,
+                                 range: ProximityRange.near)
        
         
         zone.onEnter = { context in
             if let deskOwner = context.attachments["desk-owner"] {
                 print("Welcome to \(deskOwner)'s desk")
             }
+            NotificationCenter.default.post(name: NSNotification.Name("didEnterZone"), object: ["deviceIdentifier":context.deviceIdentifier])
             
         }
         
         
-        zone.onExit = { _ in
-            print("Bye bye, come again!")
+        zone.onExit = { context in
+            print("Bye bye, come again! \(context.attachments)")
+            NotificationCenter.default.post(name: NSNotification.Name("didLeaveZone"), object: ["deviceIdentifier":context.deviceIdentifier])
         }
         
         
         zone.onContextChange = { contexts in
-            let deskOwners: [String] = contexts.map { context in
-                return context.attachments["Desk Owner"]!
-            }
+            let deskOwners = contexts.map {$0.attachments["Desk Owner"]!}
             print("In range of desks: \(deskOwners)")
 
         }
 
         proximityObserver.startObserving([zone])
-        return true
     }
 
     // MARK: UISceneSession Lifecycle
