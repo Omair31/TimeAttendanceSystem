@@ -42,11 +42,32 @@ class BeaconDetectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNotifiers()
         setupBluetoothManager()
         setupLocationServices()
-        setupNotifiers()
-        navigationController?.navigationBar.isHidden = true
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sign out", style: .plain, target: self, action: #selector(handleSignout))
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func handleSignout() {
+        UserDefaults.standard.removeObject(forKey: "name")
+        UserDefaults.standard.removeObject(forKey: "email")
+        UserDefaults.standard.removeObject(forKey: "phoneNumber")
+        UserDefaults.standard.removeObject(forKey: "department")
+        if let sceneDelegate = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                appDelegate.stopObservingZones()
+            }
+            let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let viewController = storyBoard.instantiateViewController(identifier: "ViewController") as! ViewController
+            let navigation = UINavigationController(rootViewController: viewController)
+            if let window = sceneDelegate.windows.first {
+                ///  Set the root view controller of the window with your view controller
+                window.rootViewController = navigation
+                ///  Set the window and call makeKeyAndVisible()
+                window.makeKeyAndVisible()
+            }
+        }
     }
     
     @objc func didEnterZone(notification:Notification) {
@@ -59,12 +80,15 @@ class BeaconDetectionViewController: UIViewController {
         let email = currentEmployee?.email ?? ""
         let phoneNumber = currentEmployee?.phoneNumber ?? ""
         let department = currentEmployee?.department ?? ""
-        let values = ["name":name,
+        var values = ["name":name,
                       "email":email,
                       "phoneNumber":phoneNumber,
                       "department":department,
-                      "date": Utility.getDateFormatCurrentTimeZone(by: Date(), format: "MMM dd, yyyy 'at' hh:mm aa")]
-        
+                      "date": Utility.getDateFormatCurrentTimeZone(by: Date(), format: "MMM dd, yyyy 'at' hh:mm aa"),
+                      ]
+        if !deviceName.isEmpty {
+            values["device_type"] = deviceName
+        }
         Database.database().reference().child("entrance_records").childByAutoId().updateChildValues(values) { (error, ref) in
             if error == nil {
                 self.messageLabel.text = "Done"

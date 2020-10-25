@@ -20,12 +20,16 @@ class EmployeeInfoViewController: UIViewController {
     @IBOutlet weak var departmentTextField: UITextField!
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Employee Info"
+        navigationItem.leftBarButtonItem = nil
+        navigationItem.hidesBackButton = true
         guard let credentials = self.credentials else {return}
-        nameTextField.text = (credentials.fullName?.givenName ?? "") + " " + (credentials.fullName?.familyName ?? "")
+        let name = (credentials.fullName?.givenName ?? "") + " " + (credentials.fullName?.familyName ?? "")
+        nameTextField.text = name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? "" : name
         emailTextField.text = credentials.email
         
         // Do any additional setup after loading the view.
@@ -51,6 +55,7 @@ class EmployeeInfoViewController: UIViewController {
         let phoneNumber = phoneNumberTextField.text ?? ""
         let department = departmentTextField.text ?? ""
         
+        activityIndicatorView.isHidden = false
         Database.database().reference().child("users").child(UUID().uuidString).updateChildValues(
         ["name":name,
         "email":email,
@@ -61,6 +66,11 @@ class EmployeeInfoViewController: UIViewController {
                 return
             }
             Employee.currentEmployee = Employee(name: name, email: email, phoneNumber: phoneNumber, department: department)
+            UserDefaults.standard.setValue(name, forKey: "name")
+            UserDefaults.standard.setValue(email, forKey: "email")
+            UserDefaults.standard.setValue(phoneNumber, forKey: "phoneNumber")
+            UserDefaults.standard.setValue(department, forKey: "department")
+            self.activityIndicatorView.isHidden = true
             self.showSuccessAlert()
         }
 
@@ -76,7 +86,9 @@ class EmployeeInfoViewController: UIViewController {
         let alertController = UIAlertController(title: "Success", message: "Data successfully submitted to Firebase.", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
             let beaconDetectionVC = self.storyboard?.instantiateViewController(identifier: "BeaconDetectionViewController") as! BeaconDetectionViewController
-            self.navigationController?.pushViewController(beaconDetectionVC, animated: true)
+            let navController = UINavigationController(rootViewController: beaconDetectionVC)
+            navController.modalPresentationStyle = .fullScreen
+            self.present(navController, animated: true, completion: nil)
         }))
         present(alertController, animated: true, completion: nil)
     }

@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        
         
         zone.onEnter = { context in
-            if let deskOwner = context.attachments["desk-owner"] {
+            if let deskOwner = context.attachments["Sharad' Desk"] {
                 print("Welcome to \(deskOwner)'s desk")
             }
             NotificationCenter.default.post(name: NSNotification.Name("didEnterZone"), object: ["deviceIdentifier":context.deviceIdentifier])
@@ -51,8 +51,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         zone.onContextChange = { contexts in
-            let deskOwners = contexts.map {$0.attachments["Desk Owner"]!}
+            let deskOwners = contexts.map {$0.attachments["Sharad' Desk"]}
             print("In range of desks: \(deskOwners)")
+            let deviceIdentifier = contexts.first?.deviceIdentifier ?? ""
+            NotificationCenter.default.post(name: NSNotification.Name("didEnterZone"), object: ["deviceIdentifier":deviceIdentifier])
 
         }
 
@@ -71,6 +73,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+    
+    func stopObservingZones() {
+        proximityObserver.stopObservingZones()
     }
 
 

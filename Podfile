@@ -10,5 +10,7 @@ target 'Time Attendance System' do
   pod 'Firebase'
   pod 'Firebase/Database'
   pod 'EstimoteProximitySDK'
+  pod 'Firebase/Crashlytics'
+  pod 'Firebase/Analytics'
 
 end

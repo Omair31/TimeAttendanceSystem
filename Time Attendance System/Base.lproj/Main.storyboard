@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xKX-J9-bv6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xKX-J9-bv6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Time_Attendance_System" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Time_Attendance_System" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,12 +22,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="eJo-nE-YhW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QXZ-cF-jb0"/>
                             <constraint firstItem="eJo-nE-YhW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fef-Kj-RGX"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="WFw-5b-5nL"/>
                     <connections>
@@ -71,14 +69,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="asY-EQ-pHn">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="asY-EQ-pHn">
                                         <rect key="frame" x="0.0" y="390.5" width="331" height="57.5"/>
-                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Submit">
                                                     <attributes>
-                                                        <color key="NSColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="NSColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <font key="NSFont" size="17" name="SFMono-Medium"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
@@ -92,17 +90,23 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="7r8-6Z-g0C">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="YMJ-jt-mp7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="VxF-7z-rWQ" firstAttribute="width" secondItem="hQo-3X-gT4" secondAttribute="width" multiplier="0.8" id="CFH-KW-Sra"/>
                             <constraint firstItem="VxF-7z-rWQ" firstAttribute="height" secondItem="hQo-3X-gT4" secondAttribute="height" multiplier="0.5" id="JyJ-d2-L1a"/>
                             <constraint firstItem="VxF-7z-rWQ" firstAttribute="centerY" secondItem="hQo-3X-gT4" secondAttribute="centerY" constant="-60" id="K9C-7g-55D"/>
+                            <constraint firstItem="7r8-6Z-g0C" firstAttribute="centerY" secondItem="hQo-3X-gT4" secondAttribute="centerY" id="foR-BV-RwZ"/>
+                            <constraint firstItem="7r8-6Z-g0C" firstAttribute="centerX" secondItem="hQo-3X-gT4" secondAttribute="centerX" id="jfx-kQ-w2K"/>
                             <constraint firstItem="VxF-7z-rWQ" firstAttribute="centerX" secondItem="hQo-3X-gT4" secondAttribute="centerX" id="mAg-pD-zDK"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="YMJ-jt-mp7"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="7r8-6Z-g0C" id="9yr-Ae-vg5"/>
                         <outlet property="departmentTextField" destination="I2H-9P-YGz" id="Pfp-uu-N8b"/>
                         <outlet property="emailTextField" destination="63l-Hh-nSz" id="Lxa-I7-jt6"/>
                         <outlet property="nameTextField" destination="qZK-Df-BcX" id="E91-m9-Pkr"/>
@@ -140,8 +144,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="Jld-2O-J1i"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="mzO-6Q-dJM" firstAttribute="top" secondItem="gKI-u2-qgZ" secondAttribute="bottom" constant="30" id="7Lg-3c-0fb"/>
                             <constraint firstItem="mzO-6Q-dJM" firstAttribute="width" secondItem="bbZ-Ob-zzx" secondAttribute="width" multiplier="0.75" id="RLP-fS-drc"/>
@@ -149,6 +152,7 @@
                             <constraint firstItem="gKI-u2-qgZ" firstAttribute="centerX" secondItem="bbZ-Ob-zzx" secondAttribute="centerX" id="Xnx-qQ-30n"/>
                             <constraint firstItem="gKI-u2-qgZ" firstAttribute="centerY" secondItem="bbZ-Ob-zzx" secondAttribute="centerY" constant="-40" id="pli-j8-DWb"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jld-2O-J1i"/>
                     </view>
                     <connections>
                         <outlet property="messageLabel" destination="mzO-6Q-dJM" id="R46-2O-E5l"/>
@@ -179,11 +183,5 @@
     </scenes>
     <resources>
         <image name="searching" width="290.5" height="289"/>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
